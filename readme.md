@@ -1,1 +1,16 @@
-hola karla
+Adio
+gse
+gse
+ges
+fgr
+gfr
+sg
+erwg
+rg
+ret
+ghet
+h
+ger
+g
+erg
+er
