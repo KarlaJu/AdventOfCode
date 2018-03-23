@@ -1,10 +1,1 @@
-Adio
-gse
-gse
-ges
-fgr
-gfr
-sg
-
-erg
-er
+Programas en lenguaje C que resuelven problemas de numeros naturales, serie de Fibonacci y factores primos
