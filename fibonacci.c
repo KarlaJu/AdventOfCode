@@ -11,7 +11,10 @@ int main ()
 	{
     	z=x+y;
     	printf("%d\n",z);
-    	cont=cont+z;
+    	if (z%2==0)
+    	{
+    		cont=cont+z;
+    	}
     	x=y;
     	y=z;
 	} 	  
