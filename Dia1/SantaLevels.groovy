@@ -1,4 +1,4 @@
-String levels = new File('/Users/makingdevs/Desktop/Programas/Santa floor.txt').text
+String levels = new File('/Users/makingdevs/Desktop/Programas/Santa_floor.txt').text
 //String levels ="()())"
 
 int cont=0
