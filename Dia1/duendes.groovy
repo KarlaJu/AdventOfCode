@@ -8,11 +8,11 @@ int a, b, c, sum, cont
 int p1=0, p2=0, p3=0
 
 s.eachLine{i->
-     l << i.split('x')
+     l << i.split('x').collect{it as Integer}
 }
-l.each{a=it[0].toInteger()
-       b=it[1].toInteger()
-       c=it[2].toInteger()
+l.each{a=it[0]
+       b=it[1]
+       c=it[2]
        lista= [a,b,c]       
        p1=2*(a*b)
        p2=2*(b*c)
