@@ -14,15 +14,17 @@ l.each{a=it[0]
        b=it[1]
        c=it[2]
        lista= [a,b,c]       
+      /*
+      *****Primera parte *****
        p1=2*(a*b)
        p2=2*(b*c)
-       p3=2*(a*c)
+       p3=2*(a*c)*/
        if(lista.max()==a)
-       sum= p1+ p2+ p3 +(b*c)
+       sum=(b+b+c+c)+(a*b*c)
        if(lista.max()==b)
-       sum= p1+ p2+ p3 +(a*c)
+       sum=(a+a+c+c)+(a*b*c)
        if(lista.max()==c)
-       sum= p1+ p2+ p3 +(a*b)
+       sum=(a+a+b+b)+(a*b*c)
        cont=cont+ sum
       }
 println cont
