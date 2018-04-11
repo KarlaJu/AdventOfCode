@@ -10,7 +10,7 @@ for (i=0; i<=10000000;i++){
     
 
     def x = generateMD5_A(a)
-    if (x[0..4]=="00000")
+    if (x[0..5]=="000000")
     {
     println(i)
     println(x)
