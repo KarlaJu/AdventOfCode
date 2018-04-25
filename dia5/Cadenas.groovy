@@ -3,7 +3,10 @@ def contadorCadena=0
 //String cadena = new File('/Users/makingdevs/Desktop/Programas/Dia5/cadenas.txt').text
 String cadena ="""uxcplgxnkwbdwhrp
 suerykeptdsutidb
-dmrtgdkaimrrwmej"""
+dmrtgdkaimrrwmej
+ztxhjwllrckhakut
+gdnzurjbbwmgayrg
+gjdzbtrcxwprtery"""
 /*String cadena= """asdfbxbghyouj
 //qwettau
 //poitaaxy"""*/
@@ -19,7 +22,7 @@ cadena.eachLine{i ->
         contvoca=contvoca+ i.count("i")
         contvoca=contvoca+ i.count("o")
         contvoca=contvoca+ i.count("u")
-        println("Numero de vocales: "+contvoca)
+        //println("Numero de vocales: "+contvoca)
         if(contvoca>=3)
         {
         def contdosletr=0
@@ -27,39 +30,41 @@ cadena.eachLine{i ->
             {
                 if (i[j]==i[j+1]) 
                 {
-                println("Este es el valor de i: "+i[j]+", este ese el valor siguiente: "+i[j+1])
+                //println("Este es el valor de i: "+i[j]+", este ese el valor siguiente: "+i[j+1])
+                //println("==")
                     if(i[j]=="a"||i[j]=="b"||i[j]=="c"||i[j]=="d"){
-                        println("Cuenta con dos letras iguales: ")
+                       // println("Cuenta con dos letras iguales: ")//si es cero es que no tiene palabras iguales
                         countigual++
-                        println("Para saber si es igual": +countigual)   
+                        //println("Para saber si es igual": +countigual)   
                     }
                     else
                         contdosletr=1                                      
                 }
                 
             } 
-            println("Tiene dos iguales: "+countigual)           
+            //println("Tiene dos iguales: "+countigual) //Si es cero no tiene ni dos letras seguidas          
             if(countigual>=1)
             {
-            println("Aqui no deberia entrar")
                  for(int j=0; j<=i.size()-2;j++)
                 {
+                   // println("Es i: "+i[j]+" Este es i+1: "+i[j])
                     if( (i[j]=="a" && i[j+1]=="b") || (i[j]=="c" && i[j+1]=="d")||
                     (i[j]=="p" && i[j+1]=="q")||(i[j]=="x" && i[j+1]=="y"))
                     {
-                        println("Este es i: "+i[j]+"Este es j+1: "+i[j+1])
+                        //println("Este es i: "+i[j]+"Este es j+1: "+i[j+1])
                         contdosletr++  
-                    }                                       
-                                      
+                    }                                                             
                 }                       
             }
+            else
+                contdosletr=1 
            if(contdosletr==0)
             {
                 contadorCadena++
-                println("Este es el contador de cadenas: "+contadorCadena)
+                //println("Este es el contador de cadenas: "+contadorCadena)
             } 
         }
     } 
-    println("**********")
+    //println("**********")
 }
 println(contadorCadena)
