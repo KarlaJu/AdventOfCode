@@ -19,6 +19,7 @@ cadena.eachLine{i ->
         contvoca=contvoca+ i.count("i")
         contvoca=contvoca+ i.count("o")
         contvoca=contvoca+ i.count("u")
+        println("Numero de vocales: "+contvoca)
         if(contvoca>=3)
         {
         def contdosletr=0
@@ -26,6 +27,7 @@ cadena.eachLine{i ->
             {
                 if (i[j]==i[j+1]) 
                 {
+                println("Este es el valor de i: "+i[j]+", este ese el valor siguiente: "+i[j+1])
                     if(i[j]=="a"||i[j]=="b"||i[j]=="c"||i[j]=="d"){
                         println("Cuenta con dos letras iguales: ")
                         countigual++
