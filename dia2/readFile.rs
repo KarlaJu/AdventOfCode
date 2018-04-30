@@ -33,6 +33,8 @@ fn main() {
         .expect("something went wrong reading the file");
 
     println!("With text:\n{}", contents);
+
+    let g_index = my_string.find("x"); 
 }/*
 use std::string::String;
 fn main() {
