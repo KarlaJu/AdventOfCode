@@ -1,8 +1,8 @@
 def l=[],l2=[],l3=[]
 def contdosletr=0, contadorCadena=0
-def cadena= """haeggwjzuvuyypxyu
-ugknbfddgicrmopn"""
-
+//def cadena= """haeggwjzuvuyypxyu
+//ugknbfddgicrmopn"""
+String cadena = new File('/Users/makingdevs/Desktop/Programas/Dia5/cadenas.txt').text
 cadena.eachLine{i ->
     def contvoca=0, countigual=0
     def calculo=0, num1=0, num2=0
