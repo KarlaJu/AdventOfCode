@@ -1,5 +1,7 @@
 def contador=0
-def fileOfStrings = new File("cadenas.txt")
+//def fileOfStrings = new File("cadenas.txt")
+def fileOfStrings="""aasdfgasggawr
+qweas"""
 
 fileOfStrings.eachLine() { line ->
     println line
@@ -21,7 +23,7 @@ Boolean cadenaBuena(String cadena) {
   
   // encontrando doble letra
   def dobleLetra = cadena.findAll(~/(.)\1/)
-  //println dobleLetra 
+  println ("El tamaño: "+dobleLetra.size()) 
   
   //encontrando partes de string
   def noString = cadena.findAll(~/((xy)|(ab)|(cd)|(pq))/)
@@ -31,7 +33,7 @@ Boolean cadenaBuena(String cadena) {
 //      esBuena=true
 //  }
   
-  (vocales.size()>=3 && dobleLetra && !noString) ? (esBuena=true) : "Nothing"
+  (vocales.size()>=3 && dobleLetra.size()>=2 && !noString) ? (esBuena=true) : "Nothing"
   esBuena
 }
 
