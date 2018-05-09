@@ -6,5 +6,7 @@ Advent of code
 - Día 2 DONE
 - Día 3 DONE
 - Día 4 DONE
-- Día 5
+- Día 5 Atorón!! Ayúdenme perros!
+
+  Nota: Necesito code review!
 
