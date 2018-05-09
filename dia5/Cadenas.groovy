@@ -1,5 +1,5 @@
 def contadorCadena=0
-//String cadena = new File('/Users/makingdevs/Desktop/Programas/Dia5/cadenas.txt').text
+String cadena1 = new File('/Users/makingdevs/Desktop/Programas/Dia5/cadenas.txt').text
 String cadena ="""uxcplgxnkwbdwhrp
 suerykeptdsutidb
 dmrtgdkaimrrwmej
@@ -11,7 +11,7 @@ aspwmonwunbbqlms"""
 //qwettau
 //poitaaxy"""*/
 
-cadena.eachLine{i ->
+cadena1.eachLine{i ->
     def contvoca=0, countigual=0
     def calculo=0, num1=0, num2=0
     def contdosletr=0   
@@ -32,7 +32,7 @@ cadena.eachLine{i ->
             {
                 if (i[j]==i[j+1]) 
                 {
-                println("Este es el valor de i: "+i[j]+", este ese el valor siguiente: "+i[j+1])
+                println("Este es el valor de i: ${+i[j]}, este ese el valor siguiente: "+i[j+1])
                 //println("==")
                     if(i[j]=="a"||i[j]=="b"||i[j]=="c"||i[j]=="d"){
                        // println("Cuenta con dos letras iguales: ")//si es cero es que no tiene palabras iguales
