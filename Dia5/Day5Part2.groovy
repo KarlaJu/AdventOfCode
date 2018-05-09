@@ -1,18 +1,23 @@
 class Day5Part2 {
+	def contadorLetra
 	Integer verifyIfTheStringIsANiceString(String text){
 		Integer contador=0
 		text.eachLine() { line ->
-			line.eachLine{
-
-			}
-		    validationOfNiceString(line)? contador++ : 0
+			validationEveryString(line)? contador++ : 0
 		}
 		contador
 	}
 
 
 	def verifyIfTheStringContainsALetterBetweenTwoSameLetters(String line){
-		line.findAll(~/(${letra}.${letra})/)
+		def letra, sameLetters
+		contadorLetra=0
+		(97..122).each{
+			letra = ((char)it)
+			sameLetters=line.findAll(~/(${letra}.${letra})/)
+			(sameLetters)? contadorLetra++ : 0
+		}
+		contadorLetra
 	}
 
 	def verifyIfTheStringContainsAPairOfLettersWhichRepeats(String line){
@@ -20,23 +25,11 @@ class Day5Part2 {
 	}
 
    
-   def validationEveryString(){
-   	if(verifyIfTheStringContainsALetterBetweenTwoSameLetters(line) && 
+   def validationEveryString(String line){
+   	if(verifyIfTheStringContainsALetterBetweenTwoSameLetters(line)>=1 &&
 		   verifyIfTheStringContainsAPairOfLettersWhichRepeats(line))
 				true
 		else 
 				false
    }
-}
-	def noString
-	def letra 
-	(97..122).each{
-	    letra = ((char)it)
-	    noString = line.findAll(~/(${letra}.${letra})/)
-	    if(noString.size()>1){
-	        if(line.findAll(~/(\w{2}).*?(\1)/)){
-	            println line
-	        }
-	    }
-	}
 }
