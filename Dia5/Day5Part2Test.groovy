@@ -23,4 +23,6 @@ class Day5Part2Test extends GroovyTestCase{
 		Integer result = day5.verifyIfTheStringIsANiceString(text)
 		assert result == 1
 	}
+
+	
 }
