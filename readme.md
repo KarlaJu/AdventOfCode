@@ -1,12 +1,14 @@
-Programas en lenguaje C que resuelven problemas de numeros naturales, serie de Fibonacci y factores primos
+Ejercicios resuletos de Advent of code del año 2015 y 2018
+La siguiente línea de comando funciona para correr los ejercicios:
+ -groovy <nombre_del_archivo>
 
-Advent of code
-
+# Advent of code
+## 2015
 - Día 1 DONE
 - Día 2 DONE
 - Día 3 DONE
 - Día 4 DONE
-- Día 5 Atorón!! Ayúdenme perros!
+- Día 5 DONE
 
-  Nota: Necesito code review!
-
+## 2018
+-Día 1 TO DO
