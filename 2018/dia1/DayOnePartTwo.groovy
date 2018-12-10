@@ -11,8 +11,7 @@ while(loop){
      println ("El número que se repite es: ${sum}") 
      loop = false
     }
-    resultingFrecuency = resultingFrecuency + sum
+    resultingFrecuency << sum
   }
-  sum = resultingFrecuency[-1]
 }
 
