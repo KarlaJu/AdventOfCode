@@ -14,4 +14,5 @@ La siguiente línea de comando funciona para correr los ejercicios:
 - Día 5 DONE
 
 ## 2018
-- Día 1 PROCESS
+- Día 1 DONE
+- Día 2 IN PROGRESS
